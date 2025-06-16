@@ -1,5 +1,11 @@
+import BrandText from '@/shared/ui/BrandText';
+
 const HomePage = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <BrandText />
+    </div>
+  );
 };
 
 export default HomePage;
