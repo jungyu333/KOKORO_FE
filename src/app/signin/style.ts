@@ -7,10 +7,8 @@ export const Wrapper = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
   padding-left: 28px;
   padding-right: 28px;
-`;
-
-export const Space = styled.div`
-  flex: 1;
 `;

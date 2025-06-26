@@ -5,7 +5,7 @@ import { Heading, Text } from '@chakra-ui/react';
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 56px 28px 0;
+  padding-top: 56px;
   display: flex;
   flex-direction: column;
   gap: 20px;
