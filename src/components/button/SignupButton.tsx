@@ -21,6 +21,6 @@ const Navigation = styled(Text)`
   transition: color 0.2s ease-in-out;
 
   :hover {
-    color: ${theme.colors.primary};
+    color: ${theme.colors.primary['500']};
   }
 `;

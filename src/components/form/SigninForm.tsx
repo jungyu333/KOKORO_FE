@@ -5,7 +5,6 @@ import { useForm } from 'react-hook-form';
 import styled from '@emotion/styled';
 import EmailInput from '@/components/input/EmailInput';
 import PasswordInput from '@/components/input/PasswordInput';
-import { colors } from '@/styles/theme/foundations/colors';
 import { SigninFormValues } from '@/types/signin';
 import SignupButton from '@/components/button/SignupButton';
 
@@ -24,16 +23,16 @@ export default function SigninForm() {
   return (
     <Wrapper onSubmit={handleSubmit(onSubmit)} noValidate>
       {/* Email */}
-      <EmailInput register={register} error={errors.email} />
+      <EmailInput register={register} error={errors.email} name={'email'} />
 
       {/* Password */}
-      <PasswordInput register={register} error={errors.password} />
+      <PasswordInput register={register} error={errors.password} name={'password'} />
 
       <Button
         isDisabled={Boolean(errors.email?.message || errors.password?.message)}
-        bgColor={colors.primary}
-        _hover={{ bgColor: 'secondary' }}
-        color={colors.white}
+        bgColor={'primary.500'}
+        _hover={{ bgColor: 'secondary.500' }}
+        color={'white'}
         mt="24"
         isLoading={isSubmitting}
         type="submit"
