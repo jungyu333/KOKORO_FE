@@ -7,6 +7,7 @@ import EmailInput from '@/components/input/EmailInput';
 import PasswordInput from '@/components/input/PasswordInput';
 import { colors } from '@/styles/theme/foundations/colors';
 import { SigninFormValues } from '@/types/signin';
+import SignupButton from '@/components/button/SignupButton';
 
 export default function SigninForm() {
   const {
@@ -39,6 +40,8 @@ export default function SigninForm() {
       >
         로그인!
       </Button>
+
+      <SignupButton />
     </Wrapper>
   );
 }
